@@ -1,59 +1,73 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <!-- Basic -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Peter Dillery — Representation Theory & Number Theory</title>
-  <meta name="description" content="Homepage of Peter Dillery. Research
-assistant at the University of Bonn working with Jessica
-Fintzen. Interests: local/global Langlands, representation theory,
-algebraic geometry. Publications, CV, and contact.">
+  <title>Peter Dillery — Representation Theory &amp; Number Theory</title>
+  <meta name="description" content="Homepage of Peter Dillery. Research assistant at the University of Bonn working with Jessica Fintzen. Interests: local/global Langlands, representation theory, algebraic geometry. Publications, CV, and contact.">
   <meta name="robots" content="index,follow">
 
   <!-- Canonical -->
   <link rel="canonical" href="https://peterdillery8.github.io/">
 
   <!-- Open Graph / Twitter -->
-  <meta property="og:title" content="Peter Dillery — Representation Theory
-& Number Theory">
-  <meta property="og:description" content="Research in the local and global
-Langlands program; representation theory; algebraic geometry. CV,
-publications, and contact.">
+  <meta property="og:title" content="Peter Dillery — Representation Theory &amp; Number Theory">
+  <meta property="og:description" content="Research in the local and global Langlands program; representation theory; algebraic geometry. CV, publications, and contact.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://peterdillery8.github.io/">
-  <meta property="og:image" content="
-https://peterdillery8.github.io/IMG_9897.jpg">
+  <meta property="og:image" content="https://peterdillery8.github.io/IMG_9897.jpg">
   <meta name="twitter:card" content="summary_large_image">
 
   <style>
     :root {
-      --text:#111; --muted:#555; --link:#0645ad; --bg:#fff;
---border:#e6e6e6;
+      --text:#111; --muted:#555; --link:#0645ad; --bg:#fff; --border:#e6e6e6;
     }
-    html, body { margin:0; padding:0; background:var(--bg);
-color:var(--text); font:16px/1.6 system-ui, -apple-system, Segoe UI,
-Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans",
-sans-serif; }
-    .wrap { max-width: 760px; margin: 0 auto; padding: 2.5rem 1.25rem 4rem;
-}
-    header { display:flex; gap:1.25rem; align-items:flex-start; }
-    header img { width: 220px; height:auto; border-radius: 8px; border:1px
-solid var(--border); }
-    header h1 { margin:.25rem 0 .5rem; font-size: clamp(1.75rem, 2.5vw,
-2.25rem); }
+    html, body {
+      margin:0; padding:0; background:var(--bg); color:var(--text);
+      font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto,
+      "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+    }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+
+    header { display:flex; gap:1.5rem; align-items:flex-start; }
+    header img { width: 200px; height:auto; border-radius: 4px; border:1px solid var(--border); }
+    header h1 { margin:0 0 .4rem; font-size: clamp(1.75rem, 2.5vw, 2.25rem); font-weight:600; }
     header .affil a { color: var(--link); text-decoration: none; }
     header .affil a:hover { text-decoration: underline; }
-    .meta { color: var(--muted); margin-top:.25rem; }
-    main section { margin-top: 2rem; }
-    h2 { margin: 2rem 0 0.5rem; font-size: 1.25rem; }
-    ol.pubs { padding-left: 1.2rem; }
-    ol.pubs li { margin: .65rem 0; }
+    .meta { color: var(--muted); margin-top:.4rem; }
+    .meta p { margin:.4rem 0 0; }
+
+    main section { margin-top: 2.25rem; }
+    h2 {
+      margin: 0 0 .75rem; font-size: 1.05rem; font-weight:600;
+      padding-bottom:.3rem; border-bottom:1px solid var(--border);
+    }
+    p { margin:0 0 .8rem; }
+    p:last-child { margin-bottom:0; }
+
+    ol.pubs { padding-left: 1.4rem; margin:0; }
+    ol.pubs li { margin: .9rem 0; }
+    ol.pubs .title { display:block; font-style: italic; }
+    ol.pubs .detail { display:block; color: var(--muted); font-size:.94rem; }
+    ol.pubs .detail b { color: var(--text); font-weight:600; }
+
+    ul.events { list-style:none; padding:0; margin:0; }
+    ul.events li { margin: .7rem 0; }
+    ul.events .when { color: var(--muted); }
+
     .cv a { font-weight: 600; }
-    footer { margin-top: 3rem; color: var(--muted); border-top:1px solid
-var(--border); padding-top:1rem; font-size:.95rem; }
+
+    footer {
+      margin-top: 3rem; color: var(--muted); border-top:1px solid var(--border);
+      padding-top:1rem; font-size:.95rem;
+    }
     a { color: var(--link); }
+
+    @media (max-width: 540px) {
+      header { flex-direction: column; }
+      header img { width: 160px; }
+    }
   </style>
 
   <!-- Structured data -->
@@ -62,12 +76,11 @@ var(--border); padding-top:1rem; font-size:.95rem; }
     "@context":"https://schema.org",
     "@type":"Person",
     "name":"Peter Dillery",
-    "jobTitle":"Research Assistant (from Oct 2025)",
+    "jobTitle":"Research Assistant",
     "worksFor":{
       "@type":"CollegeOrUniversity",
       "name":"University of Bonn",
-      "sameAs":["https://www.uni-bonn.de/en/home","
-https://www.math.uni-bonn.de"]
+      "sameAs":["https://www.uni-bonn.de/en/home","https://www.math.uni-bonn.de"]
     },
     "alumniOf":{
       "@type":"CollegeOrUniversity",
@@ -75,10 +88,8 @@ https://www.math.uni-bonn.de"]
     },
     "image":"https://peterdillery8.github.io/IMG_9897.jpg",
     "url":"https://peterdillery8.github.io/",
-    "affiliation":{"@type":"CollegeOrUniversity","name":"Department of
-Mathematics, University of Bonn"},
-    "knowsAbout":["representation theory","number theory","Langlands
-program","algebraic geometry"],
+    "affiliation":{"@type":"CollegeOrUniversity","name":"Department of Mathematics, University of Bonn"},
+    "knowsAbout":["representation theory","number theory","Langlands program","algebraic geometry"],
     "sameAs":[
       "https://arxiv.org/search/?searchtype=author&query=Dillery%2C+P"
     ],
@@ -93,39 +104,37 @@ program","algebraic geometry"],
       <div>
         <h1>Peter Dillery</h1>
         <div class="affil">
-          <div>Research assistant (from October 2025), <a href="
-https://www.math.uni-bonn.de">Department of Mathematics</a>, <a href="
-https://www.uni-bonn.de/en/home">University of Bonn</a></div>
+          Research assistant, <a href="https://www.math.uni-bonn.de">Department of Mathematics</a>, <a href="https://www.uni-bonn.de/en/home">University of Bonn</a>
         </div>
         <div class="meta">
           Email: <a id="e" href="#" rel="nofollow">[enable JavaScript]</a>
+          <p>Interests: local &amp; global Langlands correspondence, representation theory, related aspects of algebraic geometry.</p>
         </div>
-        <p class="meta">Interests: local &amp; global Langlands
-correspondence, representation theory, related aspects of algebraic
-geometry.</p>
       </div>
     </header>
 
     <main>
       <section aria-labelledby="about">
         <h2 id="about">About</h2>
-        <p>I am a research assistant at Bonn,
-working with <a href="https://www.math.uni-bonn.de/people/fintzen">Jessica
-Fintzen</a>. I study the local and global Langlands correspondence, with
-recent projects touching related aspects of algebraic geometry. I received
-my Ph.D. from the University of Michigan in 2022 (advisor: Tasho Kaletha).
-From Fall 2022 to Fall 2025 I was a Brin Postdoctoral Fellow at the
-University of Maryland, where I co-organized the <a href="
-https://www-math.umd.edu/research/seminars/number-theory-and-representation-theory.html">UMD
-Number Theory and Representation Theory Seminar</a> and taught for the <a
-href="https://edspace.american.edu/dcmathcircle/">DC Math Circle</a>. </p>
-          
-          <p>
-I organized the Spring 2025 workshop <a href="
-https://brinmrc.umd.edu/spring25-gallp/">Geometric
-Approaches to the Local Langlands Program</a>. I am organizing a <a href="
-https://math-events.uni-bonn.de/event/1195/">mini-workshop</a> in May 2026 at Bonn on covers
-        of reductive groups---please email me if you are interested in attending! </p>
+        <p>I am a research assistant at Bonn, working with <a href="https://www.math.uni-bonn.de/people/fintzen">Jessica Fintzen</a>. I study the local and global Langlands correspondence, with recent projects touching related aspects of algebraic geometry. I received my Ph.D. from the University of Michigan in 2022 (advisor: Tasho Kaletha). From Fall 2022 to Fall 2025 I was a Brin Postdoctoral Fellow at the University of Maryland, where I taught for the <a href="https://edspace.american.edu/dcmathcircle/">DC Math Circle</a>.</p>
+      </section>
+
+      <section aria-labelledby="organized">
+        <h2 id="organized">Conferences/Workshops Organized</h2>
+        <ul class="events">
+          <li>
+            <span class="when">May 2026:</span>
+            <a href="https://math-events.uni-bonn.de/event/1195/">Mini-workshop on covers of reductive groups</a>, University of Bonn.
+          </li>
+          <li>
+            <span class="when">Spring 2025:</span>
+            <a href="https://brinmrc.umd.edu/spring25-gallp/">Geometric Approaches to the Local Langlands Program</a>, Brin Mathematics Research Center, University of Maryland.
+          </li>
+          <li>
+            <span class="when">2022–2025:</span>
+            <a href="https://www-math.umd.edu/research/seminars/number-theory-and-representation-theory.html">UMD Number Theory and Representation Theory Seminar</a>, co-organizer.
+          </li>
+        </ul>
       </section>
 
       <section class="cv" aria-labelledby="cv">
@@ -136,40 +145,54 @@ https://math-events.uni-bonn.de/event/1195/">mini-workshop</a> in May 2026 at Bo
       <section aria-labelledby="pubs">
         <h2 id="pubs">Research Publications</h2>
         <ol class="pubs">
-          <li><i>The extended Fargues--Scholze spectral action.</i>
-(with Arnaud Eteve) <a
-href="ESAdraft21.7.26.pdf">preprint</a>.
-(49 pp.)</li>
-           <li><i>Moduli of G-bundles on rigid gerbes over affine curves.</i>
-<a href="https://arxiv.org/abs/2602.19382">arXiv</a>. (35 pp.) </li>
-           <li><i>Global rigid inner forms.</i>, Appendix to <i> Courbes et fibres vectoriels en théorie de Hodge z-adique globale,</i>
-by Siyan Daniel Li-Huerta. <a href="https://arxiv.org/abs/2602.04978">arXiv</a> </li>
-           <li><i>A Tannakian description of the local Kaletha gerbe.</i>
-(with Alexander Bertoloni Meli), <a href="
-https://arxiv.org/abs/2601.07042">arXiv</a>. (26 pp.)</li>
-          <li><i>Vector bundles on cones over a Fargues–Fontaine curve.</i>
-(with Kiran Kedlaya) <a
-href="https://kskedlaya.org/papers/affine-cone.pdf">preprint</a>.
-(17 pp.)</li>
-          <li><i>Non-basic rigid packets for discrete L-parameters.</i>
-(with David Schwein) <a href="Nbrigv8.20.24.pdf">preprint</a>. (66 pp.)</li>
-          <li><i>Isocrystals and limits of rigid local Langlands
-correspondences.</i> <a href="https://arxiv.org/abs/2312.09195">arXiv</a>.
-Accepted at <b>Algebra and Number Theory</b>. (39 pp.)</li>
-          <li><i>A stacky generalized Springer correspondence and rigid
-enhancements of L-parameters.</i> (with David Schwein) <a href="
-https://arxiv.org/abs/2308.11752">arXiv</a>. Under revision at <b>Journal of the Institute of Mathematics of Jussieu </b>(46 pp.)</li>
-          <li><i>Rigid inner forms over global function fields.</i> <a
-href="https://arxiv.org/abs/2110.10820">arXiv</a>. <b>Journal
-of the Institute of Mathematics of Jussieu</b>. (62 pp.)</li>
-          <li><i>Rigid inner forms over local function fields.</i>
-<b>Advances in Mathematics</b>. (98 pp.)</li>
-          <li><i>The canonical join complex for biclosed sets.</i> (with A.
-Clifton and A. Garver) <b>Algebra Universalis</b> (2018) 79:84. <a href="
-https://arxiv.org/abs/1708.02580">arXiv</a>. (22 pp.)</li>
-          <li><i>Minimal Length Maximal Green Sequences and Triangulations
-of Polygons.</i> (with E. Cormier, K. Serhiyenko, J. Resh, J. Whelan)
-<b>Journal of Algebraic Combinatorics</b>. (25 pp.)</li>
+          <li>
+            <span class="title">The extended Fargues–Scholze spectral action.</span>
+            <span class="detail">with Arnaud Eteve. Preprint, 49 pp. <a href="ESAdraft21.7.26.pdf">PDF</a></span>
+          </li>
+          <li>
+            <span class="title">Moduli of G-bundles on rigid gerbes over affine curves.</span>
+            <span class="detail">Preprint, 35 pp. <a href="https://arxiv.org/abs/2602.19382">arXiv</a></span>
+          </li>
+          <li>
+            <span class="title">Global rigid inner forms.</span>
+            <span class="detail">Appendix to <i>Courbes et fibrés vectoriels en théorie de Hodge z-adique globale</i>, by Siyan Daniel Li-Huerta. <a href="https://arxiv.org/abs/2602.04978">arXiv</a></span>
+          </li>
+          <li>
+            <span class="title">A Tannakian description of the local Kaletha gerbe.</span>
+            <span class="detail">with Alexander Bertoloni Meli. Preprint, 26 pp. <a href="https://arxiv.org/abs/2601.07042">arXiv</a></span>
+          </li>
+          <li>
+            <span class="title">Vector bundles on cones over a Fargues–Fontaine curve.</span>
+            <span class="detail">with Kiran Kedlaya. Preprint, 17 pp. <a href="https://kskedlaya.org/papers/affine-cone.pdf">PDF</a></span>
+          </li>
+          <li>
+            <span class="title">Non-basic rigid packets for discrete L-parameters.</span>
+            <span class="detail">with David Schwein. Preprint, 41 pp. <a href="https://arxiv.org/abs/2408.13908">arXiv</a></span>
+          </li>
+          <li>
+            <span class="title">Isocrystals and limits of rigid local Langlands correspondences.</span>
+            <span class="detail">Accepted, <b>Algebra and Number Theory</b>. 39 pp. <a href="https://arxiv.org/abs/2312.09195">arXiv</a></span>
+          </li>
+          <li>
+            <span class="title">A stacky generalized Springer correspondence and rigid enhancements of L-parameters.</span>
+            <span class="detail">with David Schwein. Under revision, <b>Journal of the Institute of Mathematics of Jussieu</b>. 46 pp. <a href="https://arxiv.org/abs/2308.11752">arXiv</a></span>
+          </li>
+          <li>
+            <span class="title">Rigid inner forms over global function fields.</span>
+            <span class="detail"><b>Journal of the Institute of Mathematics of Jussieu</b>. 62 pp. <a href="https://arxiv.org/abs/2110.10820">arXiv</a></span>
+          </li>
+          <li>
+            <span class="title">Rigid inner forms over local function fields.</span>
+            <span class="detail"><b>Advances in Mathematics</b>. 98 pp.</span>
+          </li>
+          <li>
+            <span class="title">The canonical join complex for biclosed sets.</span>
+            <span class="detail">with A. Clifton and A. Garver. <b>Algebra Universalis</b> 79:84 (2018). 22 pp. <a href="https://arxiv.org/abs/1708.02580">arXiv</a></span>
+          </li>
+          <li>
+            <span class="title">Minimal length maximal green sequences and triangulations of polygons.</span>
+            <span class="detail">with E. Cormier, K. Serhiyenko, J. Resh, and J. Whelan. <b>Journal of Algebraic Combinatorics</b>. 25 pp.</span>
+          </li>
         </ol>
       </section>
 
